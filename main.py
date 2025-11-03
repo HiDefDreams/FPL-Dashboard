@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 from fpl_data_handler import FPLDataHandler
-from dashboard import main_page
-from team_analysis import team_analysis_page
+from pages.dashboard import main_page
+from pages.team_analysis import team_analysis_page
 
 # Page configuration
 st.set_page_config(
@@ -16,7 +16,7 @@ def main():
     # Initialize data handler
     fpl_handler = FPLDataHandler()
     
-    # Sidebar navigation - ONLY THIS NAVIGATION WILL SHOW
+    # Sidebar navigation
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
         "Go to",
@@ -47,3 +47,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

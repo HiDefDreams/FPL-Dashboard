@@ -1,2 +1,5 @@
-pip install --upgrade pip      # inside your venv
-pip freeze > requirements.txt
+streamlit==1.39.0
+pandas==2.2.2
+requests==2.32.3
+plotly==5.24.1
+urllib3==2.2.3
