@@ -1,0 +1,2 @@
+pip install --upgrade pip      # inside your venv
+pip freeze > requirements.txt
